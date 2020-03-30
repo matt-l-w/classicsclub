@@ -67,6 +67,7 @@ small, .text_small {font-size: 0.8em;}
   border-width: 0;
   box-shadow: 2px 2px 4px #00000040;
   margin-bottom: 4px;
+  cursor: pointer;
 }
 
 #controls-light {
