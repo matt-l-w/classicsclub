@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classics Club</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Classics Club</h1>
+    <ol>
+      <h2>Books</h2>
+      <li>
+        <a href="murder-on-the-orient-express.html"
+          >Murder on the Orient Express</a
+        >
+      </li>
+    </ol>
+  </body>
+</html>
