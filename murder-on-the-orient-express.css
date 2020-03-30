@@ -1,11 +1,21 @@
-html {font-size: 100%;} /*16px*/
+:root {
+  --scale: 100%;
+  --background-sepia: antiquewhite;
+  --font-sepia: #333;
+  --background-dark: #03080f;
+  --font-dark: #fafafa;
+  --background-light: #fafafa;
+  --font-light: #0a0a0a;
+}
+
+html {font-size: var(--scale)} /*16px*/
 
 body {
-  background-color: antiquewhite;
+  background-color: var(--background-sepia);
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1.65;
-  color: #333;
+  color: var(--font-sepia);
   padding: 3rem;
 }
 
@@ -42,4 +52,36 @@ small, .text_small {font-size: 0.8em;}
 
 .ft1 {
   font-weight: 700;
+}
+
+#controls {
+  position: fixed;
+  bottom: 1em;
+  right: 1.15em;
+  display: flex;
+  flex-direction: column;
+}
+
+#controls > button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border-width: 0;
+  box-shadow: 2px 2px 4px #00000040;
+  margin-bottom: 4px;
+}
+
+#controls-light {
+  background-color: var(--background-light);
+  color: var(--font-light);
+}
+
+#controls-sepia {
+  background-color: var(--background-sepia);
+  color: var(--font-sepia);
+}
+
+#controls-dark {
+  background-color: var(--background-dark);
+  color: var(--font-dark);
 }
