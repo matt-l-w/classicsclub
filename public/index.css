@@ -32,12 +32,12 @@ h1, h2, h3, h4, h5 {
   font-size: 5rem;
 }
 
-h1 {
+h1, .cls_002 {
   margin: auto 0 inherit auto;
   font-size: 3.052em;
 }
 
-h2, .ft17 {font-size: 2.441em;}
+h2, .ft17, .cls_003 {font-size: 2.441em;}
 
 h3, .ft20 {font-size: 1.953em;}
 
@@ -49,6 +49,14 @@ small, .text_small {font-size: 0.8em;}
 
 .ft1 {
   font-weight: 700;
+}
+
+.cls_003 {
+  display: block;
+}
+
+.cls_006 {
+  font-style: italic;
 }
 
 #controls {
