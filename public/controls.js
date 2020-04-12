@@ -43,14 +43,16 @@ function storageAvailable(type) {
 
 function saveY() {
   if (storageAvailable('localStorage')) {
+    var key = `ypos-${window.location.pathname.replace('/', '')}`;
     var pageY = window.scrollY;
-    window.localStorage.ypos = pageY;
+    window.localStorage[key] = pageY;
   }
 }
 
 function reloadY() {
   if (storageAvailable('localStorage')) {
-    var storedY = window.localStorage.ypos;
+    var key = `ypos-${window.location.pathname.replace('/', '')}`;
+    var storedY = window.localStorage[key];
     if (storedY) {
       window.scrollTo({
         top: storedY,
