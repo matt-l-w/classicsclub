@@ -4,14 +4,11 @@ importScripts(
 
 if (workbox) {
   const { registerRoute } = workbox.routing;
-  const { CacheFirst } = workbox.strategies;
-  const { CacheableResponsePlugin } = workbox.cacheableResponse;
+  const { NetworkFirst } = workbox.strategies;
 
   registerRoute(
     /\.(?:css|html|jpg)$/,
-    new CacheFirst({
-      plugins: [new CacheableResponsePlugin({ statuses: [0, 200] })]
-    })
+    new NetworkFirst()
   );
 } else {
   console.log(`Boo! Workbox didn't load 😬`);
