@@ -75,6 +75,9 @@ small, .text_small {font-size: 0.8em;}
   box-shadow: 2px 2px 4px #00000040;
   margin-bottom: 4px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #controls-light {
@@ -90,4 +93,19 @@ small, .text_small {font-size: 0.8em;}
 #controls-dark {
   background-color: var(--background-dark);
   color: var(--font-dark);
+}
+
+#controls-font-increase {
+  background-color: var(--background-light);
+  color: var(--font-light);
+}
+
+#controls-font-decrease {
+  background-color: var(--background-light);
+  color: var(--font-light);
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.75em;
 }

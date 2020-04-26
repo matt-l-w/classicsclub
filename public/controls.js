@@ -62,6 +62,31 @@ function reloadY() {
   }
 }
 
+// font size changer
+function getRootCssRule() {
+  return document.styleSheets[0].cssRules[0].style;
+}
+
+function adjustFont(size) {
+  getRootCssRule().setProperty('--scale', size);
+}
+
+function increaseFontSize() {
+  var size = Number(getRootCssRule().getPropertyValue('--scale').split('%')[0]);
+  console.info(`old size: ${size}`);
+  var newSize = size + 10;
+  console.info(`new size: ${newSize}`);
+  adjustFont(`${newSize}%`);
+}
+
+function decreaseFontSize() {
+  var size = Number(getRootCssRule().getPropertyValue('--scale').split('%')[0]);
+  console.info(`old size: ${size}`);
+  var newSize = size - 10;
+  console.info(`new size: ${newSize}`);
+  adjustFont(`${newSize}%`);
+}
+
 document.onscroll = saveY;
 window.addEventListener('DOMContentLoaded', (event) => {
   reloadY();
