@@ -59,6 +59,11 @@ small, .text_small {font-size: 0.8em;}
   font-style: italic;
 }
 
+.overflow-wrap {
+  overflow-wrap: break-word;
+  line-height: initial;
+}
+
 #controls {
   position: fixed;
   bottom: 1em;
