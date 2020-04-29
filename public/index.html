@@ -6,6 +6,7 @@
     <title>Classics Club</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <script>
       // Check that service workers are supported
       if ("serviceWorker" in navigator) {
@@ -16,19 +17,21 @@
       }
     </script>
   </head>
-  <body>
-    <h1>Classics Club</h1>
-    <ol>
-      <h2>Books</h2>
+  <body id="index">
+    <h1><strong>Classics Club</strong></h1>
+    <h2>Books</h2>
+    <ol id="books">
       <li>
         <a href="murder-on-the-orient-express"
           >Murder on the Orient Express</a
         >
+        <small>Completed: <time>2020/04/12</time></small>
       </li>
       <li>
         <a href="slaughterhouse-five"
           >Slaughterhouse Five</a
         >
+        <small>Completed: <time>2020/04/29</time></small>
       </li>
     </ol>
   </body>

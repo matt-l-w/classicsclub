@@ -110,6 +110,27 @@ small, .text_small {font-size: 0.8em;}
   color: var(--font-light);
 }
 
+#index h1,
+#index h2 {
+  font-family: Lora, Georgia, 'Times New Roman', Times, serif;
+}
+
+#index #books a {
+  color: var(--background-dark);
+}
+
+#index #books li {
+  margin: 1.5em 0;
+}
+
+#index #books li>* {
+  display: block;
+}
+
+#index #books li small {
+  letter-spacing: 0.06em;
+}
+
 footer {
   margin-top: 2rem;
   font-size: 0.75em;
