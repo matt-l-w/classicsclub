@@ -50,6 +50,7 @@ small, .text_small, .smcap {font-size: 0.8em;}
 img {
   display: block;
   margin: 0.25rem auto;
+  max-width: 100%;
 }
 
 .ft1 {
