@@ -45,7 +45,12 @@ h4, .ft11 {font-size: 1.563em;}
 
 h5 {font-size: 1.25em;}
 
-small, .text_small {font-size: 0.8em;}
+small, .text_small, .smcap {font-size: 0.8em;}
+
+img {
+  display: block;
+  margin: 0.25rem auto;
+}
 
 .ft1 {
   font-weight: 700;
@@ -57,6 +62,10 @@ small, .text_small {font-size: 0.8em;}
 
 .cls_006 {
   font-style: italic;
+}
+
+.smcap {
+  font-variant: small-caps;
 }
 
 .overflow-wrap {
